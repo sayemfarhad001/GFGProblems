@@ -58,9 +58,22 @@ public class ArraySubset {
 
         HashMap<Long, Integer> frequencyMap = new HashMap<>();
 
+//        long arr1[] = {11, 7, 1, 13, 21, 3, 7, 3};
+//        long arr2[] = {11, 3, 7, 1, 7};
+
         // Populate the frequency map with elements of a1
         for (long num : a1) {
             frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
+
+            //frequencyMap = {
+            // 11 : 1,
+            // 7 : 2,
+            // 1: 1,
+            // 13: 1,
+            // 21: 1,
+            // 3: 2
+            // }
+
         }
 
         // Check if each element in a2 is present in the frequency map
